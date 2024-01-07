@@ -1,0 +1,10 @@
+<h3> Parent Component </h3>
+<input type="text" #pComponent (keyup)="0"/>
+<br/>
+Enter Name:<input type="text" #inputArr/>
+<button type="button" (click)="addName(inputArr.value)"> Add More </button>
+<br/>
+<app-child  [pData]="pComponent.value" [names]="nameList"></app-child>
+
+
+
